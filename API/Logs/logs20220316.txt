@@ -1,0 +1,94 @@
+2022-03-16 17:10:44.926 +02:00 [ERR] HTTP POST /api/Employee responded 500 in 0.1671 s
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EmployeeDTO -> Employee
+Service.DTO.EmployeeDTO -> Domain.Entities.Employee
+
+Type Map configuration:
+EmployeeDTO -> Employee
+Service.DTO.EmployeeDTO -> Domain.Entities.Employee
+
+Destination Member:
+Id
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Int32 -> Guid
+System.Int32 -> System.Guid
+
+Destination Member:
+Id
+
+   at lambda_method235(Closure , Int32 , Guid , ResolutionContext )
+   at lambda_method234(Closure , EmployeeDTO , Employee , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method234(Closure , EmployeeDTO , Employee , ResolutionContext )
+   at Service.Services.EmployeeService.AddEmployee(EmployeeDTO employee) in D:\Sources\Repos\backend-project-template\Service\Services\EmployeeService.cs:line 34
+   at API.Controllers.EmployeeController.AddEmployee(EmployeeDTO employee) in D:\Sources\Repos\backend-project-template\API\Controllers\EmployeeController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at API.Helpers.SerilogMiddleware.Invoke(HttpContext httpContext) in D:\Sources\Repos\backend-project-template\API\Helpers\SerilogMiddleware.cs:line 37
+2022-03-16 17:10:44.983 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+EmployeeDTO -> Employee
+Service.DTO.EmployeeDTO -> Domain.Entities.Employee
+
+Type Map configuration:
+EmployeeDTO -> Employee
+Service.DTO.EmployeeDTO -> Domain.Entities.Employee
+
+Destination Member:
+Id
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Int32 -> Guid
+System.Int32 -> System.Guid
+
+Destination Member:
+Id
+
+   at lambda_method235(Closure , Int32 , Guid , ResolutionContext )
+   at lambda_method234(Closure , EmployeeDTO , Employee , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method234(Closure , EmployeeDTO , Employee , ResolutionContext )
+   at Service.Services.EmployeeService.AddEmployee(EmployeeDTO employee) in D:\Sources\Repos\backend-project-template\Service\Services\EmployeeService.cs:line 34
+   at API.Controllers.EmployeeController.AddEmployee(EmployeeDTO employee) in D:\Sources\Repos\backend-project-template\API\Controllers\EmployeeController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at API.Helpers.SerilogMiddleware.Invoke(HttpContext httpContext) in D:\Sources\Repos\backend-project-template\API\Helpers\SerilogMiddleware.cs:line 37
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-03-16 17:15:37.665 +02:00 [INF] HTTP POST /api/Employee responded 200 in 0.2902 s
