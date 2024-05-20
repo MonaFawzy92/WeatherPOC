@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WeatherPOC.Models.DTO
+namespace WeatherPOC.Models.DTO.Shared
 {
     public class ResponseDTO
     {

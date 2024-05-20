@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using RestSharp;
 using WeatherPOC.Models.DTO;
+using WeatherPOC.Models.DTO.Shared;
 using WeatherPOC.Service.IService;
 
 namespace WeatherPOC.Service

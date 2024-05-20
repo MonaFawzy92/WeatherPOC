@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WeatherPOC.Models.DTO;
+using WeatherPOC.Models.DTO.Shared;
 using WeatherPOC.Service.IService;
 
 namespace WeatherPOC.Controllers
 {
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class WeatherController : ControllerBase

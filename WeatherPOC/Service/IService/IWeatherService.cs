@@ -1,4 +1,4 @@
-﻿using WeatherPOC.Models.DTO;
+﻿using WeatherPOC.Models.DTO.Shared;
 
 namespace WeatherPOC.Service.IService
 {
